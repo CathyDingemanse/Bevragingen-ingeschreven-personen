@@ -23,7 +23,7 @@ In het antwoordbericht worden alleen gegevens opgenomen die in het BRP zitten.
 Deze gegevens zitten niet in een (voor alle gemeenten geldend) bronsysteem dat voor de bevraging geraadpleegd kan worden. Deze gegevens zijn dus (voorlopig) niet raadpleegbaar. Ook worden deze gegevens niet in alle gemeenten (op dezelfde manier) gebruikt.
 
 ## Zoeken op adres in de BRP
-Zoeken op adres (postcode) bij een ingeschreven persoon wordt gedaan op de postcode zoals die in de BRP is opgeslagen.
+Zoeken op adres (postcode) bij een ingeschreven persoon wordt gedaan op de postcode zoals die in de BRP is opgeslagen. 
 
 *Ratio*
 * Een oplossing waarbij deze zoekvraag wordt samengesteld uit een bevraging op BAG (adressen) gecombineerd met een of meerdere bevraging(en) op GBA/BRP legt teveel complexiteit en last bij gemeenten.
@@ -68,8 +68,6 @@ Bijvoorbeeld "verblijfstitelIngeschrevenNatuurlijkPersoon" wordt "verblijfstitel
 * Extensie "IngeschrevenNatuurlijkPersoon" is redundant, want het is al duidelijk dat het gaat over eigenschappen van een ingeschreven natuurlijk persoon.
 * Is consistent met ontwerpbeslissing [Naamgeving van de API velden binnen een resource] (https://github.com/VNG-Realisatie/gemma-zaken/blob/master/docs/content/developers/design-keuzes.md#naamgeving-van-de-api-velden-binnen-een-resource)
 
-## Alleen gegevens van een gerelateerde resource die ook in de BRP worden opgeslagen kunnen worden embed
-Embedded gegevens (van een gerelateerde resource), voor de ingeschreven natuurlijk persoon alleen het verblijfsadres, bevat alleen die gegevens die ook in de BRP worden opgeslagen. Deze gegevens worden door de provider gehaald uit de betreffende basisregistratie (hier: BAG).
 
 *Ratio*
 * Alleen de gegevens die ook in het BRP zitten zijn relevant voor de resource ingeschreven natuurlijk persoon.
